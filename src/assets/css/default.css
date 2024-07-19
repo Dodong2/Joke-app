@@ -13,6 +13,7 @@
 
 body {
     height: 100svh;
+    background-color: var(--primary-color-dark);
 }
 
 /* Sample Fonts */
@@ -29,4 +30,8 @@ body {
   @font-face {
     font-family: "poppins-bold";
     src: url("../fonts/Poppins-Bold.ttf");
+  }
+  @font-face {
+    font-family: "joke";
+    src: url("../fonts/JOKEWOOD.TTF");
   }

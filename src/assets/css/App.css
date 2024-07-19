@@ -3,74 +3,123 @@
   padding: 20px;
 }
 
-/********** Sample Header CSS **********/
-.sample-header {
+/********** Header CSS **********/
+.header {
   position: relative;
-  background-color: var(--primary-color-dark);
   border-radius: 15px;
   margin: auto;
-  padding: 27px;
   overflow: hidden;
-  margin-top: 28px;
+  display: grid;
+  place-content: center;
+  /* background-color: var(--primary-color); */
+  height: 180px;
 }
-.sample-header h1 {
-    font-family: 'lora';
-    font-size: 1.2em;
-    font-weight: 900;
-    text-align: center;
-    color: var(--primary-text-light);
+.header img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 170px;
+  width: 170px;
+  margin: auto;
+  object-fit: cover;
+  filter: drop-shadow(0 0 .5em var(--primary-color));
 }
-.sample-header p {
-    font-family: 'poppins-light';
-    font-weight: 100;
-    text-align: left;
-    font-size: .8em;
-    color: var(--primary-text-light);
-    margin-top:20px ;
+.header h1 {
+  font-family: "joke";
+  font-size: 2.5em;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  text-align: center;
+  color: var(--primary-text-color);
+  width: 300px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 .1em var(--primary-color));
 }
-/********** Sample Button CSS **********/
-.sample-btn {
+.header p {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "poppins-bold";
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-size: 1em;
+  color: var(--primary-text-color);
+  width: 300px;
+  filter: drop-shadow(0 0 .1em var(--primary-color));
+}
+
+/********** Joke Container text CSS **********/
+.joke-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: var(--primary-color);
+  filter: drop-shadow(0 0 .6em var(--primary-color));
+  border-radius: 15px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+/********** Set-up text CSS **********/
+.setup h1 {
+  font-family: 'poppins-light';
+  font-size: .8em;
+  color: var(--primary-text-color);
+}
+.setup p {
+  font-family: 'poppins-bold';
+  font-size: 1.3em;
+  color: var(--primary-text-color);
+}
+/********** Punchline text CSS **********/
+.punchline h1 {
+  font-family: 'poppins-light';
+  font-size: .8em;
+  color: var(--primary-text-color);
+  margin-top: 20px;
+}
+.punchline p {
+  font-family: 'poppins-bold';
+  font-size: 1.3em;
+  color: var(--primary-text-color);
+}
+
+
+/********** Generate Button CSS **********/
+.generate-joke {
   display: flex;
   justify-content: center;
-  position: relative;
   overflow: hidden;
   font-family: "poppins-bold";
-  font-size: 1.4em;
-  background-color: var(--button-primary-bg);
-  color: var(--button-primary-text);
+  font-size: 1em;
   border: none;
   border-radius: 10px;
   padding: 10px;
   margin: auto;
-  width: 70%;
-  top: 150px;
-}
-.sample-btn:active {
-    transform: scale(0.95);
-}
-
-.sample-footer {
-    position: relative;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    top: 350px;
-}
-.sample-footer h1 {
-    font-family: 'poppins-light';
-    font-size: .8em;
-    color: var(--primary-color);
+  width: 230px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color);
 }
 
-/********** Sample Error Vibration validationn error CSS **********/
-.vibrate-not-work {
-    position: absolute;
-    text-align: center;
-    color: var(--primary-color-red);
-    font-size: .8em;
-    font-family: 'poppins-bold';
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'poppins-bold';
+  color: var(--primary-color);
+  font-size: 1em;
+  letter-spacing: 0.2em;
 }
