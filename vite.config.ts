@@ -11,7 +11,7 @@ const manifestForPlugin = {
   ],
   manifest: {
     name: 'Castar Joke App',
-    short_name: 'Castar web/app template',
+    short_name: 'Castar Joke app',
     description: 'Castar Portfolio App',
     icons: [
       {
