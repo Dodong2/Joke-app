@@ -8,6 +8,7 @@ const urlsToCache = [
   '/favicon.ico',
   '/apple-touch-icon.png',
   '/masked-icon.svg',
+  './assets/img/LT.png'
   // Add other assets you want to cache
 ];
 

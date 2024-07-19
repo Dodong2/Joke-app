@@ -10,7 +10,7 @@ const manifestForPlugin = {
     'masked-icon.svg',       // Include masked icon
   ],
   manifest: {
-    name: 'Castar Web/App PWA Template',
+    name: 'Castar Joke App',
     short_name: 'Castar web/app template',
     description: 'Castar Portfolio App',
     icons: [
